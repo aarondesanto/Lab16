@@ -1,0 +1,22 @@
+html {
+  font-size: 14px;
+}
+.redd {
+  text-decoration: underline;
+}
+.bluee {
+  font-style: italic;
+}
+.greenn {
+  font-weight: bold;
+}
+.cyann {
+  background-color: #000;
+  color: #FFF;
+}
+.magentaa {
+  text-decoration: overline;
+}
+.yelloww {
+  font-size: 2em;
+}

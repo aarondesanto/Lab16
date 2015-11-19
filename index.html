@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+  <script src='script.js'  type='text/javascript'></script>
+  <link href='styles.css' rel='stylesheet' type='text/css'>
+  <meta charset='utf-8'>
+<title>Page Title</title>
+</head>
+<body ng-app='myModule' ng-controller="mainController">
+
+  <button ng-click="talk()">Talk!</button>
+  <input ng-model="searchFilter" placeholder="Search"/>
+
+  <div id="mainContentContainer">
+    <span class='ng-class : {{entry.styling}}' ng-repeat="entry in objectBank | filter: searchFilter track by $index">{{entry.word}} </span>
+  </div>
+
+</body>
+</html>
